@@ -1,20 +1,31 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+     Authentication
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div>
+    <ion-button class="fb" (click)="loginwithfb()">
+      <div>
+        
+        <ion-icon name="logo-facebook" class="icon"></ion-icon>
+      </div>
+      <label>Sign Up with Facebook</label>
+    </ion-button>
   </div>
+ 
+<ion-button class="google" (click) = "loginWithGoogle()" >
+  <div>
+    <ion-icon name="logo-google" class="icon"></ion-icon>
+  </div>
+  
+  <label>Sign Up with Google</label>
+ </ion-button> 
+
+
+ <ion-button (click)="login()">GooglePlus</ion-button>
 </ion-content>
